@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="350dp" />
+
+<Spinner
+    android:id="@+id/nivel"
+    android:layout_width="140dp"
+    android:layout_height="wrap_content"
+    android:layout_alignTop="@+id/reportes"
+    android:layout_marginLeft="72dp"
+    android:layout_toRightOf="@+id/reportes" />
+
+<Button
+    android:id="@+id/reportes"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/map"
+    android:text="Reportar" />
+
+<TextView
+    android:id="@+id/logout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/rts"
+    android:layout_alignBottom="@+id/rts"
+    android:layout_alignLeft="@+id/nivel"
+    android:text="Log out" />
+
+<Button
+    android:id="@+id/rts"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignRight="@+id/reportes"
+    android:text="Reportes" />
+
+</RelativeLayout>
